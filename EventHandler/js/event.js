@@ -136,6 +136,18 @@ function groupOnTest(){
     $(document).on('mouseover focus', '#btn0.on', function(){
         alert('hello grup!');
     });
-    $('#btn0').addClass('on'); // 상위의 mouseover, focus 이벤트가 등록 된 이후 생성된 임의의 동적 요소;
     
+    $(document).one('mouseover focus', '#btn_once.on', function(){ //각각의 이벤트(over, focus 각각 독립적으로 1회)에 1회성의 이벤트 핸들러 설정.
+        alert('hello group!(once)');
+    });
+  
+    $('#Offbtn0').on('click', function(){
+        $(document).off('mouseover focus', '#btn0.on');  // document에 on을 걸었으므로 off도 document로 지정해야함!!!!!
+    });
+    $('#Offbtn_once').on('click', function(){
+        $(document).off('mouseover focus', '#btn_once.on')
+    });
+
+    $('#btn0').addClass('on'); // 상위의 mouseover, focus 이벤트가 등록 된 이후 생성된 임의의 동적 요소; 순서에 상관없이 동작함!
+    $('#btn_once').addClass('on'); // 상위의 mouseover, focus 이벤트가 등록 된 이후 생성된 임의의 동적 요소; 순서에 상관없이 동작함!
 }
