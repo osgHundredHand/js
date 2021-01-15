@@ -1,0 +1,10 @@
+body{
+    height: 8000px;
+    width: 4000px; 
+}
+body > div:first-of-type{
+    width: 50%; margin: 0 auto;
+    background-color: yellow;
+    position: fixed; 
+    left: 25%; top: 0;
+}
