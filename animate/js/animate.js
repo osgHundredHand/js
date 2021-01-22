@@ -1,5 +1,7 @@
 $(document).ready(function(){
+    init();
     moveBox();
+    boxOppacityControl();
 });
 function init(){
     $box = $('#mov_box');
@@ -41,4 +43,19 @@ function marginLeftCal(str){
         }
     }
     return box_margin_val;
+}
+function boxOppacityControl(){
+    var $btnIn = $('#fadeIn');
+    var $btnOut = $('#fadeOut')
+    $($btnIn).on('click', function(){
+        if(!$($box).is(':animated')){
+            $($box).fadeIn(750, 'linear');
+        }
+        
+    });
+    $($btnOut).on('click', function(){
+        if(!$($box).is(':animated')){
+            $($box).fadeOut(750, 'linear');
+        }
+    });
 }
