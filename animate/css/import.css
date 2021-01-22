@@ -1,0 +1,13 @@
+div:first-of-type button{
+    text-transform: capitalize;
+}
+div:last-of-type{
+    border: 1px solid black;
+    width: 300px; 
+}
+div:last-of-type span{
+    display: block;
+    text-align: center;
+    background-color: #f0f;
+    width: 50px;
+}
