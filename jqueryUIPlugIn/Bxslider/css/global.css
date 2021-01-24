@@ -1,0 +1,16 @@
+.bx-wrapper{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1000px; width: 100%;
+}
+.bx-wrapper{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    box-shadow: none;
+}
+.bx-wrapper,
+.bx-wrapper .bx-viewport,
+.bx-wrapper .bx-viewport img{
+    border-radius: 10px;
+}
