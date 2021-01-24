@@ -1,0 +1,32 @@
+ul{
+    display: block;
+    width: 80px;
+    background-color: burlywood;
+}
+.dragBox{
+    display: inline-block;
+}
+.dragBox img{
+    width: 100%; max-width: 150px;
+    display: inline-block;
+}
+div#wrap{
+    border: 1px solid black;
+    width:  500px; height: 300px;
+    box-sizing: border-box;
+}
+div#container{
+    background-color: bisque;
+    width:  500px; height: 300px;
+    position: relative;
+}
+div#container span{
+    display: block; width: 100px; height: 100px;
+    text-align: center; 
+    background-color: aquamarine;
+}
+div#pos{
+    width: 100px;height: 100px;
+    position: absolute;
+    background-color: brown; right: 0; top: 0;
+}
