@@ -1,0 +1,25 @@
+.box{
+    width: 300px; height: 300px; margin: 0 0 0 auto;
+    background-color: pink; text-align: center;
+    padding-top: 130px; box-sizing: border-box;
+    animation-duration: 3s;
+    animation-name: boxey;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+@keyframes boxey{
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+        background-color: pink;
+    }
+  
+    100%{
+        transform: rotateY(360deg) rotateX(0deg);
+        margin-right: 80%;
+        background-color: red;
+    }
+}
+.box{
+
+}
